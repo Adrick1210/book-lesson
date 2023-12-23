@@ -24,6 +24,9 @@ app.use(express.urlencoded({ extended: false }));
 // how we get access to the req.body
 app.use(methodOverride("_method"));
 
+app.use("/public", express.static("public"));
+
+
 // ROUTES
 app.use("/books", booksRouter);
 
