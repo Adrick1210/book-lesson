@@ -10,7 +10,7 @@
       <a href="/books/<%= books[i]._id %>"> <%= books[i].title %> </a>
       <p>click title to see more</p>
       <!-- delete form goes here -->
-      <form action="/books/<%= books[i]._id%>/_method=DELETE" method="post">
+      <form action="/books/<%= books[i]._id%>/?_method=DELETE" method="post">
         <input type="submit" value="Remove Book" />
       </form>
 
